@@ -10,6 +10,10 @@ public class Task01_TwoPointers {
 
     public static int maxConsecutiveElements(String line) {
 
+        // currentLetterIndex задаёт позицию первого символа группы (левый указатель),
+        // а nextLetterIndex - позицию первого символа следующей группы (правый указатель).
+        // Разность этих индексов равна количеству символов в текущей группе.
+
         int result = 0;
         int currentLetterIndex = 0;
 
